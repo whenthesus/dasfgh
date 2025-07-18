@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirballLand</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="main-menu">
+        <h1>AirballLand</h1>
+        <button id="load-button">LOAD</button>
+    </div>
+    <div id="load-menu" style="display: none;">
+        <h2>Load Game</h2>
+        <div id="save-slots">
+            <button class="save-slot" data-slot="1">Save Slot 1</button>
+            <button class="save-slot" data-slot="2">Save Slot 2</button>
+            <button class="save-slot" data-slot="3">Save Slot 3</button>
+            <button id="new-game-button">New Game</button>
+        </div>
+        <button id="back-button">Back</button>
+    </div>
+    <div id="game-container" style="display: none;">
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <div id="instructions">
+            Use WASD to move, E to save at checkpoint
+        </div>
+    </div>
+    <script src="SaveManager.js"></script>
+    <script src="MenuManager.js"></script>
+    <script src="BattleSystem.js"></script>
+    <script src="Game.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
